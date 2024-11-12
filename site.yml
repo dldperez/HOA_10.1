@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  remote_user: dldperez
+  become: yes
+  become_user: root
+  roles:
+  - { role: elasticsearch }
+  - { role:  kibana }
+  - { role: logstash }
+
+

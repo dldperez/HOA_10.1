@@ -1,0 +1,6 @@
+# handlers/main.yml
+
+- name: Restart Elasticsearch
+  systemd:
+    name: "{{ elasticsearch_service_name }}"
+    state: restarted

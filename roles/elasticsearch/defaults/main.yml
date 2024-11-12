@@ -1,0 +1,8 @@
+# defaults/main.yml
+
+elasticsearch_version: "7.15.0"
+elasticsearch_repo_url: "https://artifacts.elastic.co/packages/{{ elasticsearch_version[0] }}.x/yum"
+elasticsearch_gpg_key: "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
+elasticsearch_package_name: "elasticsearch"
+elasticsearch_service_name: "elasticsearch"
+elasticsearch_config_path: "/etc/elasticsearch/elasticsearch.yml"
